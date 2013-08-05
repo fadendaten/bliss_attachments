@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BlissAttachments::VERSION
   s.authors     = ["Fadendaten GmbH"]
   s.email       = ["support@fadendaten.ch"]
-  s.homepage    = "www.fadendaten.ch"
+  s.homepage    = "http://www.fadendaten.ch"
   s.summary     = "Bliss wrapper around paperclip gem"
   s.description = "Attachment Model wrapped around paperclip"
 
