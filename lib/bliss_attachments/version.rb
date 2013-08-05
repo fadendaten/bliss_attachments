@@ -1,0 +1,3 @@
+module BlissAttachments
+  VERSION = "0.0.1"
+end
