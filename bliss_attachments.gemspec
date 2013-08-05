@@ -7,13 +7,13 @@ require "bliss_attachments/version"
 Gem::Specification.new do |s|
   s.name        = "bliss_attachments"
   s.version     = BlissAttachments::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BlissAttachments."
-  s.description = "TODO: Description of BlissAttachments."
+  s.authors     = ["Fadendaten GmbH"]
+  s.email       = ["support@fadendaten.ch"]
+  s.homepage    = "www.fadendaten.ch"
+  s.summary     = "Bliss wrapper around paperclip gem"
+  s.description = "Attachment Model wrapped around paperclip"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.mdown"]
 
   s.add_dependency "rails", "~> 3.2.14"
   s.add_dependency "paperclip", "~> 3.5.1"
