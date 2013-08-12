@@ -1,6 +1,5 @@
 module BlissAttachments
   class Attachment < ActiveRecord::Base
-    include Deleter
     attr_accessible :parent_type, :parent_id, :file, :file_file_name,
       :file_content_type, :file_file_size, :type, :favourited
 
