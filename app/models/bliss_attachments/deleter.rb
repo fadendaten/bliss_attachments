@@ -11,10 +11,13 @@ module BlissAttachments
   # It ignores the cache key at the end of the path name.
   #
   # ==== Examples
+  #    class Style < ActiveRecord::Base
+  #      include BlissAttachments::Deleter
+  #    end
+  #
   #    style.respond_to? :delivery_examples
   #    # => true
   #
-  #    style.extend BlissAttachments::Deleter
   #    style.delete_delivery_example 'some/path/to/example.jpg?12345'
   module Deleter
     def method_missing(meth, *args, &block)
