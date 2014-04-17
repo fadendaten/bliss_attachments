@@ -9,4 +9,17 @@ module BlissAttachments
       :styles      => {:large => "500x500", :medium => "150x150", :thumb => "75x100"},
       :default_url => "/system/missing_thumb.png"
   end
+
+  class ImageAttachment < Attachment
+    validates_attachment :file,
+      :content_type => { :content_type => ["image/jpg", "image/jpeg", "image/tiff", "image/png"] }
+
+    has_attached_file :file,
+      :styles      => { :original => {:geometry => "100%", :format => "png"},
+                        :large => {:geometry => "500x500", :format => "png"},
+                        :medium => {:geometry => "150x150", :format => "png"},
+                        :thumb => {:geometry => "75x100", :format => "png"}
+                      },
+      :default_url => "/system/missing_thumb.png"
+  end
 end
