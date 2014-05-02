@@ -11,6 +11,8 @@ module BlissAttachments
     
     validates_attachment_content_type :file, :content_type => ["image/jpg", "image/jpeg", "image/tiff", "image/png"]
     
+
+    
   end
   
 end
