@@ -1,6 +1,6 @@
 module BlissAttachments
   class ImageAttachment < Attachment
-    after_post_process :overwrite_content_type_file_name
+    before_save :overwrite_content_type_file_name
 
     has_attached_file :file,
                       :styles      => { :original => {:geometry => "100%", :format => "png"},
@@ -15,10 +15,12 @@ module BlissAttachments
     private
 
     def overwrite_content_type_file_name
-      new_file_name = (self.file_file_name.split /\./).first
-      new_file_name += ".png"
-      self.file_file_name = new_file_name
-      self.file_content_type = "image/png"
+      unless self.file.exists?
+        new_file_name = (self.file_file_name.split /\./).first
+        new_file_name += ".png"
+        self.file_file_name = new_file_name
+        self.file_content_type = "image/png"
+      end
     end
 
 
