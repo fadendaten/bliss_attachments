@@ -22,7 +22,5 @@ module BlissAttachments
         self.file_content_type = "image/png"
       end
     end
-
-
   end
 end

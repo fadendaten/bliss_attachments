@@ -31,11 +31,16 @@ describe BlissAttachments::ImageAttachment, :focus => true do
     end
 
     describe "converting" do
-      it "should convert all image types to .png" do
+      it "should convert tiff image types to .png" do
         attachment = attachment_class.create :file => test_file(".tiff")
-        raise attachment.inspect
         attachment.file_content_type.should == "image/png"
       end
+      
+      it "should convert .jpg image types to .png" do
+        attachment = attachment_class.create :file => test_file(".jpg")
+        attachment.file_content_type.should == "image/png"
+      end
+      
     end
   end
 end
