@@ -15,7 +15,7 @@ module BlissAttachments
     private
 
     def overwrite_content_type_file_name
-      unless self.file.exists?
+      unless self.file.exists? && !self.created_at.nil?
         new_file_name = (self.file_file_name.split /\./).first
         new_file_name += ".png"
         self.file_file_name = new_file_name
