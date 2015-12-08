@@ -3,7 +3,7 @@ PATH
   specs:
     bliss_attachments (0.0.4)
       paperclip (~> 4.1.1)
-      rails (~> 3.2.14)
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -39,7 +39,7 @@ GEM
     builder (3.0.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.4)
+    cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     diff-lcs (1.2.4)
     erubis (2.7.0)
@@ -60,7 +60,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    polyglot (0.3.4)
+    polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -108,7 +108,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.39)
+    tzinfo (0.3.46)
 
 PLATFORMS
   ruby
@@ -118,3 +118,6 @@ DEPENDENCIES
   jquery-rails
   rspec-rails
   sqlite3
+
+BUNDLED WITH
+   1.10.6
