@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     bliss_attachments (0.0.4)
-      paperclip (~> 4.1.1)
+      paperclip
       rails
 
 GEM

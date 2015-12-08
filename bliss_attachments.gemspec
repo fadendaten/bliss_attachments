@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails"
-  s.add_dependency "paperclip", "~> 4.1.1"
+  s.add_dependency "paperclip"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
