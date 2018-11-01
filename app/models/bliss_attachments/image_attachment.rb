@@ -8,7 +8,7 @@ module BlissAttachments
                                         :medium => {:geometry => "150x150", :format => "png"},
                                         :thumb => {:geometry => "75x100", :format => "png"}
                       },
-                      :default_url => "/system/missing_thumb.png"
+                      :default_url => BlissAttachments.config.default_url
 
     validates_attachment_content_type :file, :content_type => ["image/jpg", "image/jpeg", "image/tiff", "image/png"]
 
