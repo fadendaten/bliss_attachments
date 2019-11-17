@@ -37,6 +37,8 @@ module BlissAttachments
     def destroy_attachment(attachments, file_path)
       attachment = attachments
         .find { |a| a.file.url(:large, false) == without_cache_key(file_path) }
+      return if attachment.nil?
+
       attachment.destroy
     end
 
