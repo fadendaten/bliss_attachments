@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bliss_attachments (0.0.4)
+    bliss_attachments (0.0.5)
       paperclip
       rails
 
